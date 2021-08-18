@@ -27,7 +27,7 @@ namespace JoinTable
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<MenuDBContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Connection")));
+            services.AddDbContext<WareHouseDBContext>(option => option.UseSqlServer(Configuration.GetConnectionString("Connection")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
